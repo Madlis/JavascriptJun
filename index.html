@@ -78,9 +78,24 @@
             res = a !== e;
             document.write("a не идентично e : " + res + "<br />");
 
+
+
         </script>
 
+
     </pre>
+
+    <h2>Напишите программу расчета объема - V и площади поверхности - S цилиндра</h2>
+
+    <script>
+            var V,S;
+            var r = 4;
+            var h = 8;
+            V = Math.PI * Math.pow(r,2) * h;
+            S = 2 * Math.PI * r * ( r + h );
+            document.write("Объем цилиндра V = " + V + "<hr>" );
+            document.write("Площадь поверхности цилиндра S = " + S + '<hr>');
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
