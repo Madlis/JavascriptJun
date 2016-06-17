@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Тернарный метод
+    var a = 10;
+    var msg = (a == 10) ? "a = 10": "a != 10";
+    alert(msg);
+
+    a = confirm('a = 1 or 0 ?');
+    b = confirm('a = 1 or 0? ');
+
+
+    var a = 1, b = 2, max = 0;
+    max = ( a > b ) ? a : b; //Если (a > b) То: вернуть а иначе: вернуть b;
+    console.log(max);
+    // if
+    if ( a == true && b == true) {
+
+    }
+
+           var coffeeSize = prompt("Размеры стаканчиков кофе: 1 = Маленький, 2 = Средний, 3 = Большой. Пожалуйста, сделайте свой выбор:");
+
+        var cost = 0;
+<!--
+
+      // Оператор многозначного выбора - switch-case (переключатель). 
+
+-->
+    switch (coffeeSize) {
+        case "1":
+            {
+                cost += 25;
+                document.write("<img src='coffee.jpg' width='100' height='100'/>");
+            }
+            break;
+        case "2":
+            {
+                cost += 50;
+                document.write("<img src='coffee.jpg' width='150' height='150'/>");
+            }
+            break;
+        case "3":
+            {
+                cost += 75;
+                document.write("<img src='coffee.jpg' width='256' height='256'/>");
+            }
+            break;
+        default:
+            {
+                document.write("Неверный выбор.");
+            }
+            break;
+    }
+
+    if (cost != 0) {
+        document.write("<p>Внесите " + cost + " копеек.<p>Спасибо!");
+    }
+    else {
+        coffeeSize = prompt("Размеры стаканчиков кофе: 1 = Маленький, 2 = Средний, 3 = Большой. Пожалуйста, сделайте свой выбор:");
+    }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
